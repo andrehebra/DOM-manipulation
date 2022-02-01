@@ -41,7 +41,7 @@ function helloWorldAlert() {
 //creating button
 const button = document.createElement('button');
 button.textContent = 'click me for an alert';
-button.addEventListener('click', () => helloWorldAlert());
+button.addEventListener('click', helloWorldAlert);
 
 //adding button to page
 container.appendChild(button);
