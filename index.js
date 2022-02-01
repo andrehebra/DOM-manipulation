@@ -41,7 +41,14 @@ function helloWorldAlert() {
 //creating button
 const button = document.createElement('button');
 button.textContent = 'click me for an alert';
-button.addEventListener('click', helloWorldAlert);
+//button.addEventListener('click', helloWorldAlert);
+button.addEventListener('click', function (e) {
+    //will return the element that was clicked in console
+    console.log(e.target);
+
+    //will change the background color of the element when clicked
+    e.target.style.backgroundColor = 'blue';
+});
 
 //adding button to page
 container.appendChild(button);
