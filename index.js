@@ -30,3 +30,18 @@ borderDiv.append(headerInDiv, pInDiv);
 
 //adding borderDiv and children to page
 container.appendChild(borderDiv);
+
+
+//button that causes alert
+//function for execution of eventListener
+function helloWorldAlert() {
+    alert("Hello World");
+}
+
+//creating button
+const button = document.createElement('button');
+button.textContent = 'click me for an alert';
+button.addEventListener('click', () => helloWorldAlert());
+
+//adding button to page
+container.appendChild(button);
